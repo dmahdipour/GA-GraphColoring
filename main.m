@@ -19,6 +19,8 @@ for runTime=1:maxRun
     flgEnd=0;
     counterG=1;
     while(counterG<Gmax)
+        % OF and FF PopT
+        [OFpopT , FFpopT , ColorUses] = of_ff(myGraph,PopT,popNum,L,colorN);
 
         counterG = counterG+1;    
     end
