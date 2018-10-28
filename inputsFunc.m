@@ -16,6 +16,59 @@ function [z1,z2,z3,z4,z5,z6,z7,z8,z9] = inputsFunc()
          
     L=length(myGraph);
     colorN=2;
+    
+% % % Define a Circular Graph
+%     L=29;
+%     myGraph=zeros(L);
+%     for idx=1:L-1
+%         myGraph(idx,idx+1)=1;
+%     end
+%     myGraph(1,L)=1;
+%     colorN=3;
+
+
+% % % Define a Full Graph
+%     L=30;
+%     myGraph=zeros(L);
+%     for idx=1:L-1
+%         for jdx=idx+1:L
+%             myGraph(idx,jdx)=1;
+%         end
+%     end
+%     colorN=L;
+
+
+% % % Define a Custom Tree
+%     myGraph=[0 1 1 0 0 0 0 0 0 0 0 0 0 0 0;
+%              0 0 0 1 1 0 0 0 0 0 0 0 0 0 0;
+%              0 0 0 0 0 1 1 0 0 0 0 0 0 0 0;
+%              0 0 0 0 0 0 0 1 1 0 0 0 0 0 0;
+%              0 0 0 0 0 0 0 0 0 1 1 0 0 0 0;
+%              0 0 0 0 0 0 0 0 0 0 0 1 1 0 0;
+%              0 0 0 0 0 0 0 0 0 0 0 0 0 1 1;
+%              0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+%              0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+%              0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+%              0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+%              0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+%              0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+%              0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+%              0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;];
+ 
+    
+% % % Define a Custom Graph
+%     myGraph=[0 1 0 1 0 1 0 1 1 0;
+%              0 0 1 0 1 1 0 1 0 1;
+%              0 0 0 1 0 1 0 1 0 1;
+%              0 0 0 0 1 0 1 0 1 0;
+%              0 0 0 0 0 1 0 1 1 1;
+%              0 0 0 0 0 0 1 0 1 1;
+%              0 0 0 0 0 0 0 1 1 1;
+%              0 0 0 0 0 0 0 0 1 0;
+%              0 0 0 0 0 0 0 0 0 1;
+%              0 0 0 0 0 0 0 0 0 0;];
+%     L=length(myGraph);
+%     colorN=4;
 
 % % % Public Parameters
     Gmax=100;
