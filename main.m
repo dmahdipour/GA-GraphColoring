@@ -54,4 +54,6 @@ for runTime=1:maxRun
     resOF(runTime,:)=ElitismOF;
     resData(runTime,:)=ElitismData;
 
+    clearvars -except resOF resData maxRun L colorN;
+    
 end
