@@ -55,5 +55,18 @@ for runTime=1:maxRun
     resData(runTime,:)=ElitismData;
 
     clearvars -except resOF resData maxRun L colorN;
-    
+
+    resColor=L*ones(maxRun,1);
+end
+
+for i=1:maxRun
+    for j=1:L-1
+       for k=j+1:L
+           if(resData(i,j) == resData(i,k))
+               % Color Confilict Count
+               resColor(i,1)=resColor(i,1)-1;
+               break;
+           end
+       end
+    end 
 end
