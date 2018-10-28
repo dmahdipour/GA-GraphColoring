@@ -21,6 +21,8 @@ for runTime=1:maxRun
     while(counterG<Gmax)
         % OF and FF PopT
         [OFpopT , FFpopT , ColorUses] = of_ff(myGraph,PopT,popNum,L,colorN);
+        %FPSpopT
+        FPSpopT = fpsFunc(popNum,FFpopT);
 
         counterG = counterG+1;    
     end
