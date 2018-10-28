@@ -70,3 +70,5 @@ for i=1:maxRun
        end
     end 
 end
+
+resFigure(resOF,resData,resColor);
