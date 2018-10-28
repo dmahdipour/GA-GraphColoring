@@ -23,6 +23,8 @@ for runTime=1:maxRun
         [OFpopT , FFpopT , ColorUses] = of_ff(myGraph,PopT,popNum,L,colorN);
         %FPSpopT
         FPSpopT = fpsFunc(popNum,FFpopT);
+        % Selection and Generate Intermediate pop
+        PopInt = intermediatePop(popNum,FPSpopT,PopT,L);
 
         counterG = counterG+1;    
     end
