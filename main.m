@@ -41,10 +41,12 @@ for runTime=1:maxRun
             % flgEnd=1;
             break;
         end 
-        
+
         % OF and FF PopNext
         [OFpopNext , FFpopNext , ColorUses] = of_ff(myGraph,PopNext,popNum,L,colorN);
 
+        % replcament and create new PopT
+        [PopT , ElitismData , ElitismOF] = replacementFunc(popNum,PopT,PopNext,OFpopT,OFpopNext,ElitismData,ElitismOF);
 
         counterG = counterG+1;    
     end
