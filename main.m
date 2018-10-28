@@ -18,5 +18,8 @@ for runTime=1:maxRun
 
     flgEnd=0;
     counterG=1;
-    
+    while(counterG<Gmax)
+
+        counterG = counterG+1;    
+    end
 end
