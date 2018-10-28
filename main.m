@@ -50,4 +50,8 @@ for runTime=1:maxRun
 
         counterG = counterG+1;    
     end
+    
+    resOF(runTime,:)=ElitismOF;
+    resData(runTime,:)=ElitismData;
+
 end
