@@ -25,7 +25,17 @@ for runTime=1:maxRun
         FPSpopT = fpsFunc(popNum,FFpopT);
         % Selection and Generate Intermediate pop
         PopInt = intermediatePop(popNum,FPSpopT,PopT,L);
-
+        
+        % CrosseOver and Mutation  => generate PopNext
+        if(Pc > rand())
+            PopNext=crossOver(PopInt,L,popNum);
+        else
+            PopNext=PopInt;
+        end
+        if(Pm > rand())
+            PopNext=mutation(PopNext,L,colorN,popNum);
+        end
+ 
         counterG = counterG+1;    
     end
 end
